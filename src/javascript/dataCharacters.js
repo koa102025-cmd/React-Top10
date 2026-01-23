@@ -1,0 +1,73 @@
+export default [
+	{
+		id: 1,
+		name: "Ada Wong",
+		game: "Resident Evil",
+		img: "ada-wong.jpg",
+		gender: "female",
+	},
+	{
+		id: 2,
+		name: "Jill Valentine",
+		game: "Resident Evil",
+		gender: "female",
+		img: "jill-valentine.jpg",
+	},
+	{
+		id: 3,
+		name: "Clementine",
+		game: "The Walking Dead",
+		gender: "female",
+		img: "clementine.jpg",
+	},
+	{
+		id: 4,
+		name: "Bela Dimitrescu",
+		game: "Resident Evil Village",
+		gender: "female",
+		img: "bella-dimitrescu.jpg",
+	},
+	{
+		id: 5,
+		name: "Ciri",
+		game: "The Witcher III",
+		gender: "female",
+		img: "ciri.jpg",
+	},
+
+	{
+		id: 6,
+		name: "Sam",
+		game: "Until Dawn",
+		gender: "female",
+		img: "sam.jpg",
+	},
+	{
+		id: 7,
+		name: "Lara Croft",
+		game: "Tomb Raider",
+		gender: "female",
+		img: "lara-croft.jpg",
+	},
+	{
+		id: 8,
+		name: "Ashley Graham",
+		game: "Resident Evil",
+		gender: "female",
+		img: "ashley-graham.jpg",
+	},
+	{
+		id: 9,
+		name: "Ellie Williams",
+		game: "The Last of Us",
+		gender: "female",
+		img: "ellie-williams.jpg",
+	},
+	{
+		id: 10,
+		name: "Miranda",
+		game: "Resident Evil",
+		gender: "female",
+		img: "miranda.jpg",
+	},
+];
