@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { ThemeContext } from "../javascript/ThemeContext";
 
 export default function Character(props) {
+	const theme = useContext(ThemeContext);
 	const [isHovered, setIsHovered] = useState(false);
 	const timeoutRef = useRef(null);
 	const videoRef = useRef(null);
@@ -34,7 +36,7 @@ export default function Character(props) {
 
 	return (
 		<div
-			className="character-card"
+			className={`character-card ${theme === "dark" ? "dark-mode" : ""}`}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}>
 			<div className="media-container">
