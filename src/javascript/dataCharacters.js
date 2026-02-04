@@ -5,6 +5,7 @@ export default [
 		game: "Resident Evil",
 		img: "ada-wong.jpg",
 		gender: "female",
+		video: "ada.mp4",
 	},
 	{
 		id: 2,
@@ -19,13 +20,15 @@ export default [
 		game: "The Walking Dead",
 		gender: "female",
 		img: "clementine.jpg",
+		video: "clementine.mp4",
 	},
 	{
 		id: 4,
 		name: "Bela Dimitrescu",
 		game: "Resident Evil Village",
 		gender: "female",
-		img: "bella-dimitrescu.jpg",
+		img: "bella.jpg",
+		video: "bella-dimitrescu.mp4",
 	},
 	{
 		id: 5,
@@ -33,6 +36,7 @@ export default [
 		game: "The Witcher III",
 		gender: "female",
 		img: "ciri.jpg",
+		video: "ciri.mp4",
 	},
 
 	{
@@ -41,6 +45,7 @@ export default [
 		game: "Until Dawn",
 		gender: "female",
 		img: "sam.jpg",
+		video: "sam.mp4",
 	},
 	{
 		id: 7,
@@ -55,6 +60,7 @@ export default [
 		game: "Resident Evil",
 		gender: "female",
 		img: "ashley-graham.jpg",
+		video: "ashley-graham.mp4",
 	},
 	{
 		id: 9,
@@ -62,6 +68,7 @@ export default [
 		game: "The Last of Us",
 		gender: "female",
 		img: "ellie-williams.jpg",
+		video: "ellie-williams.mp4",
 	},
 	{
 		id: 10,

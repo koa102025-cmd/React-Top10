@@ -6,10 +6,9 @@ export default function App() {
 		return (
 			<Character
 				key={char.id}
-				name={char.name}
-				game={char.game}
-				gender={char.gender}
+				{...char}
 				img={`/characters/${char.img}`}
+				video={`/edits/${char.video}`}
 			/>
 		);
 	});
