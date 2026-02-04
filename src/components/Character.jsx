@@ -18,8 +18,9 @@ export default function Character(props) {
 	const handleMouseEnter = () => {
 		timeoutRef.current = setTimeout(() => {
 			setIsHovered(true);
-			if (videoRef.current) {
+			if (videoRef.current && props.video) {
 				videoRef.current.muted = false;
+				videoRef.current.volume = props.volume || 0.4;
 				videoRef.current.play().catch(() => {});
 			}
 		}, 300);
@@ -45,13 +46,15 @@ export default function Character(props) {
 					alt={props.name}
 					className={`character-media character-img ${isHovered ? "hidden" : ""}`}
 				/>
-				<video
-					ref={videoRef}
-					src={props.video}
-					loop
-					playsInline
-					className={`character-media character-video ${isHovered ? "visible" : ""}`}
-				/>
+				{props.video && (
+					<video
+						ref={videoRef}
+						src={props.video}
+						loop
+						playsInline
+						className={`character-media character-video ${isHovered ? "visible" : ""}`}
+					/>
+				)}
 			</div>
 
 			<h2>{props.name}</h2>

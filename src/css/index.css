@@ -39,7 +39,6 @@
 	justify-content: center;
 	align-items: center;
 	height: 7rem;
-	gap: 1.4rem;
 	margin-bottom: 2rem;
 	background: linear-gradient(
 		to right,
@@ -67,6 +66,7 @@
 
 .header-text {
 	font-size: 2.5rem;
+	margin-right: 5rem;
 }
 
 .theme-toggle {
@@ -75,14 +75,71 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	cursor: pointer;
-	border-radius: 30%;
+
+	width: 2.8rem;
+	height: 2.8rem;
+
+	border-radius: 1rem;
 	border: none;
 	background: var(--text-main);
-	color: var(--bg-color);
+	box-shadow: var(--text-shadow);
+
+	color: var(--card-bg);
 	font-weight: bold;
+
+	margin-right: 0.6rem;
+
+	opacity: 0.9;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+	opacity: 1;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	filter: brightness(1.1);
+}
+
+.theme-toggle:active {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	filter: brightness(0.9);
+}
+
+.gender-toggle {
+	transform: translateY(0.3rem);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: min-content;
+	height: 2.8rem;
+	padding: 0 1.2rem;
+
+	border-radius: 1rem;
+	border: 1px solid var(--text-main);
+	color: var(--text-main);
+	box-shadow: var(--text-shadow);
+
+	background: var(--card-bg);
+	font-weight: bold;
+	font-size: 1.1rem;
+
+	opacity: 0.9;
+
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.gender-toggle:hover {
+	opacity: 1;
+	background: var(--text-main);
+	color: var(--card-bg);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gender-toggle:active {
+	filter: contrast(1.2);
 }
 
 .app-container {
@@ -120,6 +177,7 @@
 	box-shadow: var(--box-shadow);
 	border-radius: 1rem;
 
+	cursor: pointer;
 	transition:
 		background-color 0.5s ease,
 		transform 0.3s ease;
