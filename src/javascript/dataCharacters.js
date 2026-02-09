@@ -6,7 +6,7 @@ export default [
 		img: "ada.jpg",
 		gender: "female",
 		video: "ada.mp4",
-		volume: 0.6,
+		volume: 0.5,
 	},
 	{
 		id: 2,
@@ -82,10 +82,12 @@ export default [
 	},
 	{
 		id: 10,
-		name: "Miranda",
+		name: "Claire Redfield",
 		game: "Resident Evil",
 		gender: "female",
-		img: "miranda.jpg",
+		img: "claire.jpg",
+		video: "claire.mp4",
+		volume: 1,
 	},
 	{
 		id: 11,
@@ -102,6 +104,8 @@ export default [
 		game: "Resident Evil",
 		gender: "male",
 		img: "albert.jpg",
+		video: "albert.mp4",
+		volume: 0.5,
 	},
 	{
 		id: 13,
@@ -118,6 +122,8 @@ export default [
 		game: "Until Dawn",
 		gender: "male",
 		img: "josh.jpg",
+		video: "josh.mp4",
+		volume: 0.4,
 	},
 	{
 		id: 15,
@@ -131,7 +137,9 @@ export default [
 		name: "Joel Miller",
 		game: "The Last of Us",
 		gender: "male",
-		img: "joel.jpg",
+		img: "joel-miller.jpg",
+		video: "joel.mp4",
+		volume: 0.25,
 	},
 	{
 		id: 17,

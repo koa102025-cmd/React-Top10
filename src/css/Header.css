@@ -118,4 +118,5 @@
 
 .gender-toggle:active {
 	filter: contrast(1.2);
+	opacity: 0.5;
 }

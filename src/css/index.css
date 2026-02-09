@@ -7,6 +7,7 @@
 	--bg-color: rgb(210, 190, 190);
 	--card-bg: rgb(143, 104, 104);
 	--header-bg: #a0818178;
+	--img-tint: rgba(95, 6, 66, 0.2);
 
 	--text-main: #fcf1f1;
 	--border-color: rgba(255, 255, 255, 0.5);
@@ -14,13 +15,14 @@
 	--shadow-color: rgba(0, 0, 0, 0.15);
 	--text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	--box-shadow: 0 10px 20px rgba(80, 0, 0, 0.2);
-	--vid-brightness: 1.17;
+	--vid-brightness: 1.14;
 }
 
 .app-container.dark {
 	--bg-color: #5d5d5d;
 	--header-bg: #1f1c1c78;
 	--card-bg: #2d2d2d;
+	--img-tint: rgba(13, 10, 12, 0.2);
 
 	--text-main: #f3e9e1;
 	--border-color: #828080;
