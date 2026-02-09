@@ -5,7 +5,7 @@ import React, {
 	useContext,
 	useCallback,
 } from "react";
-import { ThemeContext } from "../javascript/ThemeContext";
+import { ThemeContext } from "../javascript/ThemeContext.jsx";
 
 export default function Character({
 	name,

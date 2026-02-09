@@ -1,12 +1,9 @@
 import React from "react";
 import { Sun, Moon, Venus, Mars } from "lucide-react";
+import { useTheme } from "../javascript/ThemeContext.jsx";
 
-export default function Header({
-	theme,
-	toggleTheme,
-	genderFilter,
-	toggleGender,
-}) {
+export default function Header({ genderFilter, toggleGender }) {
+	const { theme, toggleTheme } = useTheme();
 	return (
 		<header className="app-header">
 			<h1 className="header-text">
