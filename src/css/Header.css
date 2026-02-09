@@ -110,7 +110,8 @@
 
 .gender-toggle:hover {
 	opacity: 1;
-	background: var(--text-main);
+	background: rgba(255, 255, 255, 0.148);
+	filter: brightness(var(--vid-brightness));
 	color: var(--card-bg);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

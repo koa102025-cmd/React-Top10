@@ -59,6 +59,8 @@ export default [
 		game: "Tomb Raider",
 		gender: "female",
 		img: "lara-croft.jpg",
+		video: "lara-croft.mp4",
+		volume: 1,
 	},
 	{
 		id: 8,

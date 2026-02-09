@@ -13,7 +13,7 @@ export default function Character({
 	img,
 	video,
 	rank,
-	volume = 0.4,
+	volume,
 	isDraggingOriginal,
 	isOverlay,
 	isAnyDragging,
@@ -60,7 +60,7 @@ export default function Character({
 				setIsHovered(true);
 				if (videoRef.current) {
 					videoRef.current.muted = false;
-					videoRef.current.volume = volume;
+					videoRef.current.volume = volume || 0.4;
 					videoRef.current.play().catch(() => {});
 				}
 			}

@@ -68,11 +68,13 @@
 .character-img {
 	opacity: 1;
 	z-index: 2;
+	filter: brightness(var(--vid-brightness));
 }
 
 .character-video {
 	opacity: 0;
 	z-index: 1;
+	filter: brightness(var(--vid-brightness));
 }
 
 .character-img.hidden {

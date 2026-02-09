@@ -14,6 +14,7 @@
 	--shadow-color: rgba(0, 0, 0, 0.15);
 	--text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	--box-shadow: 0 10px 20px rgba(80, 0, 0, 0.2);
+	--vid-brightness: 1.17;
 }
 
 .app-container.dark {
@@ -25,6 +26,7 @@
 	--border-color: #828080;
 	--shadow-color: rgba(0, 0, 0, 0.8);
 	--box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	--vid-brightness: 1;
 }
 
 * {

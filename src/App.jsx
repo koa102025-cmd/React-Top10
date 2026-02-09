@@ -11,12 +11,12 @@ import {
 	arrayMove,
 } from "@dnd-kit/sortable";
 
-import { SortableItem } from "./javascript/SortableItem.jsx";
+import { SortableItem } from "./components/SortableItem.jsx";
 import Character from "./components/Character";
+import Header from "./components/Header.jsx";
+
 import dataCharacters from "./javascript/dataCharacters.js";
 import { ThemeContext } from "./javascript/ThemeContext.js";
-
-import { Sun, Moon, Venus, Mars } from "lucide-react";
 
 export default function App() {
 	const [theme, setTheme] = useState("dark");
@@ -65,23 +65,12 @@ export default function App() {
 	return (
 		<ThemeContext.Provider value={theme}>
 			<div className={`app-container ${theme}`}>
-				<header className="app-header">
-					<h1 className="header-text">
-						My Top 10 Finest {genderFilter === "female" ? "Women" : "Men"}
-					</h1>
-
-					<button className="theme-toggle" onClick={toggleTheme}>
-						{theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
-					</button>
-
-					<button className="gender-toggle" onClick={toggleGender}>
-						{genderFilter === "female" ? (
-							<Venus size={20} color="#ffa1d0" />
-						) : (
-							<Mars size={20} color="#afd7ff" />
-						)}
-					</button>
-				</header>
+				<Header
+					theme={theme}
+					toggleGender={toggleGender}
+					toggleTheme={toggleTheme}
+					genderFilter={genderFilter}
+				/>
 
 				<main>
 					<DndContext
