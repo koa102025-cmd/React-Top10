@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import {
 	DndContext,
 	closestCenter,
@@ -20,8 +20,15 @@ import { ThemeProvider, useTheme } from "./javascript/ThemeContext.jsx";
 
 export default function App() {
 	const [genderFilter, setGenderFilter] = useState("female");
-	const [characters, setCharacters] = useState(dataCharacters);
+	const [characters, setCharacters] = useState(() => {
+		const savedCharacters = localStorage.getItem("top10_characters");
+		return savedCharacters ? JSON.parse(savedCharacters) : dataCharacters;
+	});
 	const [activeId, setActiveId] = useState(null);
+
+	useEffect(() => {
+		localStorage.setItem("top10_characters", JSON.stringify(characters));
+	}, [characters]);
 
 	return (
 		<ThemeProvider>
